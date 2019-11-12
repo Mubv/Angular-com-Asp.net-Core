@@ -1,8 +1,11 @@
-Projeto de WebApp, usando angular 8 consumindo uma WebApi construida em Asp.Net Core
+# Projeto de WebApp, usando angular 8 consumindo uma WebApi construida em Asp.Net Core
+
+  Este projeto foi construido com Angular 8 para consumir uma WebApi no padrão Rest usando em Asp.Net Core, além disso foi usado o Angular Material para dar o acabamento à Interface
 
 # ATENÇÃO:
   Antes de executar este projeto em teste, abrir e executar o da WebApi em Asp.Net Core, para uma melhor experiência de uso!
-# User
+  
+# Sobre o Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
@@ -10,22 +13,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
