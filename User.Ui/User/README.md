@@ -1,4 +1,4 @@
-Projeto de WebApp, usando angular 8 consumindo uma WebApi
+Projeto de WebApp, usando angular 8 consumindo uma WebApi construida em Asp.Net Core
 
 # ATENÇÃO:
   Antes de executar este projeto em teste, abrir e executar o da WebApi em Asp.Net Core, para uma melhor experiência de uso!
