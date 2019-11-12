@@ -1,0 +1,117 @@
+<div class="container">
+    <mat-card>
+      <mat-toolbar color="accent">
+        <div align="center" style="color:black; text-align: right;">
+          Usuários
+        </div>
+      </mat-toolbar>
+
+      <br><br>
+      <mat-card-content>
+        <form [formGroup]="userForm"(ngSubmit)="onFormSubmit(userForm.value)">
+          <table>
+            <tr>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input formControlName="Nome" matTooltip="Digite o nome" matInput placeholder="Nome Usuário">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('Nome').value && userForm.get('Nome').touched"></span>
+                </mat-error>
+              </td>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input formControlName="CPF" matTooltip="Digite o CPF" matInput placeholder="CPF" id="CPF" (change)="formatarCPF()" type="text">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('CPF').value && userForm.get('CPF').touched"></span>
+                </mat-error>
+              </td>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input formControlName="Email" matTooltip="Digite o Email" matInput placeholder="Email">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('Email').value && userForm.get('Email').touched"></span>
+                </mat-error>
+              </td>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input matInput [matDatepicker]="picker"matTooltip="Digite a Data de Nascimento" formControlName="DataNascimento" placeholder="Data de Nascimento">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('DataNascimento').value && userForm.get('DataNascimento').touched"></span>
+                </mat-error>
+              </td>
+            </tr>
+            <tr>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input matTooltip="Digite o CEP"formControlName="CEP" matInput placeholder="CEP" id="CEP" (change)="formatarCEP()" type="text">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('CEP').value && userForm.get('CEP').touched"></span>
+                </mat-error>
+              </td>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input matTooltip="Digite a Cidade"formControlName="Cidade" matInput placeholder="Cidade">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('Cidade').value && userForm.get('Cidade').touched"></span>
+                </mat-error>
+              </td>
+              <td class="tbl1">
+                <mat-form-field class="demo-full-width">
+                  <input matTooltip="Digite o Estado"formControlName="Estado" matInput placeholder="Estado">
+                </mat-form-field>
+                <mat-error>
+                  <span *ngIf="!userForm.get('Estado').value && userForm.get('Estado').touched"></span>
+                </mat-error>
+              </td>
+              <td  class="content-center">
+                <button type="submit" mat-raised-button color="accent"matTooltip="Click para enviar"[disabled]="!userForm.valid">Processar</button>&nbsp;&nbsp;&nbsp;
+                <button type="reset" mat-raised-button color="accent"matTooltip="Click para limpar" (click)="resetForm()">Limpar</button>
+              </td>
+            </tr>
+          </table>
+
+      <br><br>
+
+      <table class="table" style="width:100%;">
+          <tr ngclass="btn-primary">
+            <th class="tbl2">Id</th>
+            <th class="tbl2">Nome</th>
+            <th class="tbl2">CPF</th>
+            <th class="tbl2">Email</th>
+            <th class="tbl2">Nascimento</th>
+            <th class="tbl2">CEP</th>
+            <th class="tbl2">Cidade</th>
+            <th class="tbl2">Estado</th>
+            <th class="tbl2"></th>
+            <th class="tbl2"></th>
+          </tr>
+
+          <tr *ngFor="let user of allusers | async">
+            <td class="tbl2">{{user.id}}</td>
+            <td class="tbl2">{{user.nome}}</td>
+            <td class="tbl2">{{user.cpf}}</td>
+            <td class="tbl2">{{user.email}}</td>
+            <td class="tbl2">{{user.dataNascimento | date: 'dd/MM/yyyy'}}</td>
+            <td class="tbl2">{{user.cep}}</td>
+            <td class="tbl2">{{user.cidade}}</td>
+            <td class="tbl2">{{user.estado}}</td>
+            <td class="tbl2">
+              <button type="button" class="btn btn-info"matTooltip="Click Edit Button"(click)="loaduserToEdit(user.id)">Editar</button>
+            </td>
+            <td class="tbl2">
+              <button type="button" class="btn btn-danger"matTooltip="Click Delete Button"(click)="deleteuser(user)">Apagar</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

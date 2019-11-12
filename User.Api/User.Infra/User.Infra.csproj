@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyVersion>2019.11.12.5</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Comum\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Otacom.NucleusValidacoes" Version="1.5.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "User.Infra/1.0.0": {
+        "dependencies": {
+          "Otacom.NucleusValidacoes": "1.5.0"
+        },
+        "runtime": {
+          "User.Infra.dll": {}
+        }
+      },
+      "Otacom.NucleusValidacoes/1.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/Nucleus.Validacoes.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "User.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Otacom.NucleusValidacoes/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wu+aFXCoUM2AiLTEqjgZu67YJDyD7GIhKWGXo/7vi5VhQ7NAgdN0xgNt082aeGHWnsxZUQiJSg7IMAEEPTdEeQ==",
+      "path": "otacom.nucleusvalidacoes/1.5.0",
+      "hashPath": "otacom.nucleusvalidacoes.1.5.0.nupkg.sha512"
+    }
+  }
+}
