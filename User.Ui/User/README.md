@@ -1,9 +1,9 @@
-# Projeto de WebApp, usando angular 8 consumindo uma WebApi construida em Asp.Net Core
+# Projeto de WebApp, usando Angular 8 consumindo uma WebApi construida em Asp.Net Core
 
   Este projeto foi construido com Angular 8 para consumir uma WebApi no padrão Rest usando em Asp.Net Core, além disso foi usado o Angular Material para dar o acabamento à Interface
 
 # ATENÇÃO:
-  Antes de executar este projeto em teste, abrir e executar o da WebApi em Asp.Net Core, para uma melhor experiência de uso!
+  Antes de executar este projeto em teste, abrir e executar o da WebApi em Asp.Net Core (https://github.com/Mubv/Angular-com-Asp.net-Core/tree/master/User.Api), para uma melhor experiência de uso!
   
 # Sobre o Angular
 
