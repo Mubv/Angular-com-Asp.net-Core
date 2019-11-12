@@ -1,3 +1,7 @@
+Projeto de WebApp, usando angular 8 consumindo uma WebApi
+
+# ATENÇÃO:
+  Antes de executar este projeto em teste, abrir e executar o da WebApi em Asp.Net Core, para uma melhor experiência de uso!
 # User
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
